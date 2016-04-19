@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html> 
+
+<head> 
+<title> ArcGIS APP </title>
+<meta http-equiv="Content-ype" content=text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1" maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css">
+
+<script> 
+dojoConfig= {
+        parseOnLoad: false,
+        async: true,
+        isDebug: true,
+        packages: [{ name:'app', location: "/app"}]
+}
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+
+<script>
+    require(["dojo/parser"], function (parser){
+        parser.parse();
+    });
+</script>
+
+</head>
+
+
+
+<body class="claro">
+    <h1> Hello World! </h1>
+    <div data-dojo-type="dijit/form/Button">press mej</div>
+    <div data-dojo-type="dijit/form/TextBox"></div>
+    <div data-dojo-type="app/views/First" data-dojo-props="title:'samira'" ></div>
+</body>
+
+</html>
