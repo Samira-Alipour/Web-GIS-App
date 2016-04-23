@@ -3,9 +3,12 @@
  <head>
  	<title>test</title>
  	<script src="js/jquery-1.12.2.min.js"></script>
+ 	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css">
+
 
  </head>
- <body>
+ <body class="claro">
  <script>
  $(document).ready( function () {
  	$("#g").css("background-color","red");
@@ -13,6 +16,8 @@
  </script>
 
 <input id="g" type="button" value="clearDraw" name="cleardraw" />
+<div data-dojo-type="dijit/form/Button">press mej</div>
+
 
  </body>
  </html>
